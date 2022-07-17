@@ -1,0 +1,413 @@
+body {
+  max-width: 100%;
+  font-family: Helvetica;
+/* Parallax del Wallpaper*/
+ background-image: url(../img/Wallpaper\ imagine\ dragons.jpg);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+
+
+ /**USAR CUANDO HAGAS MEDIA QUERIE PARA TAMAÑO DE PANTALLA COMPLETA
+  
+   **/
+}
+
+/** FORMATO DE CSS HECHO CON MOBILE FIRST PARA APLICAR MEDIA QUERIES**/ 
+
+/** HEADER**/
+
+/** Logo de imagine Dragons**/
+.imgdr {
+  display: flex;
+  justify-content: center;
+  border-radius: 3%;
+  overflow: hidden;
+}
+
+/**Div general del body**/
+.contenedorgeneral{ 
+    width: 100%;
+margin: 0 auto;
+}
+
+.navheader {
+  /* color: ; */
+  background-color: black;
+  box-shadow: 0 5px 10 px; color: grey;
+  /* FLEX */
+  list-style: none;
+  margin: 0, auto;
+  padding: 0, auto;
+
+}
+
+.navheader a {
+  color: bisque;
+  text-decoration: none; 
+  margin: 0em 2em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+}
+.navheader a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+
+
+.giffrontal { 
+  width: 98%y;
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5%;
+  padding-left: 0, auto;
+  height: 40vh;
+  }
+
+.textocostado {
+  display: flex;
+  flex-direction: column;
+  
+  }
+
+  .maindiv {
+    color:aliceblue;
+    width: 93%;
+    line-height: 2em;
+    font-size: 15px;
+ 
+  }
+/** Section **/
+   section {
+    margin: 20px 10px;
+    padding-left: 20px;
+  }
+.div_sectionprincipal { 
+    /* FLEX */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/** "Escucha nuestro nuevo album! **/
+  section h3 {
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: cornsilk;
+  }
+
+  /** IMAGEN MERCURY ACT 1**/
+  .a_album1 {
+    width: 55vw;
+    
+  }
+  /** VIDEO PUESTO**/
+  iframe {
+    min-height: 35vw;
+    height: 22.5vh;
+  }
+/* ASIDE TEXTO PREVIO FOOTER */
+
+  aside{
+    height: 89px;
+    /* padding: 20px 10px 10px 10px; */
+    text-align: center;
+    color: aliceblue;
+  }
+  aside p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    color: bisque;
+      /* font weight es para hacerlo "strong", le podes ajustar q tan strong jejeje*/
+    }
+    .footerclass{
+
+      /* GRID */
+      display: grid;
+      
+    grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: 
+      /* "g1 . ." */
+      "g1 g3 g2";
+      align-items: center;
+    }
+    .logofooter{
+      grid-area: g1;
+      width: 15vw;
+    }
+    .redes_sociales{
+      grid-area: g2;
+      display: flex;
+      justify-content: end;
+    }
+    .footer_letras{
+      grid-area: g3;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+      padding: 0px 10%;
+      padding-top: 10%;
+      padding-left: 5%;
+      color: bisque;
+      font-size: small;
+    }
+    
+    .footerclass{ background-color: rgba(135, 137, 139, 0.499);
+         
+    }
+    
+    .footer_letras p {
+      padding: 0px 3%; 
+      position: relative;
+      color: bisque; }
+    
+
+@media (min-width: 576px) and (max-width: 992px)
+{ 
+  
+  body {
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: Helvetica;
+    background-image: url(../img/Wallpaper\ imagine\ dragons.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .giffrontal { 
+    width: 75%;
+  
+  }
+  .textocostado {
+  display: flex; 
+  }
+  
+  .navheader {
+      height: 2em;
+      /* color: ; */
+      background-color: black;
+      /* FLEX */
+      display: flex;
+      justify-content: center;
+  }
+  
+
+  .textocostado {
+    display: grid; 
+    grid-template-rows: 2fr 1fr;
+    }
+    .maindiv {
+      width: 100%;
+      padding: 0;
+      margin-top: .2px;
+      font-size: 0.8em;
+      text-align: center;
+    }
+    .giffrontal{
+      width: 100%;
+    }
+
+
+  .secdiv2 {
+    padding-right: 0px;
+    }
+
+    .div_sectionprincipal {
+
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 5rem;
+      
+    }
+  
+    section h3 {
+      font-size: 35px;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      color: cornsilk;
+    }
+  
+    .a_album1 {
+      width: 45vw;
+      display: flex;
+      align-self:center
+      
+    }
+  
+  
+    aside{
+      height: 70px;
+      padding: 20px 10px 10px 10px;
+      text-align: center;
+      color: aliceblue;
+    }
+    aside p {
+      font-size: 20px;
+      font-family: Arial, Helvetica, sans-serif;
+        /* font weight es para hacerlo "strong", le podes ajustar q tan strong jejeje*/
+      }
+  .footer_letras{
+    font-size: larger;
+    justify-self: baseline;
+    row-gap: 2rem;
+  }
+
+ } 
+
+
+ 
+ 
+ 
+ /* MEDIA QUERY DEL ESCRITORIO */
+
+
+
+ @media (min-width: 993px) {
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: Helvetica;
+    background-image: url(../img/Wallpaper\ imagine\ dragons.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.imgdr {
+    display: flex;
+    justify-content: center;
+}
+
+.giffrontal { 
+  width: 75%;
+
+}
+.textocostado {
+display: flex; 
+flex-direction: row;
+justify-content:space-around
+}
+
+.navheader {
+    height: 2em;
+    /* color: ; */
+    background-color: black;
+    /* FLEX */
+    display: flex;
+    justify-content: center;
+}
+
+.navheader a {
+    color: bisque;
+    text-decoration: none; 
+    margin: 0em 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+}
+
+.navheader a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+  .maindiv {
+    padding: 2px 15px;
+    margin-top: -4px;
+    
+  }
+
+.maindiv h2 {
+  padding: 25px;
+  color: aliceblue;
+  font-size: 1em;
+}
+.secdiv2 {
+right: 20%; 
+  }
+
+  .div_sectionprincipal {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 20rem;
+    
+  }
+
+  section h3 {
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: cornsilk;
+  }
+
+  .a_album1 {
+    width: 25vw;
+    display: flex;
+    align-self:center
+    
+  }
+.a_album2 {
+  width: 30vw;
+  justify-items: flex-end;
+
+}
+
+  }
+
+  aside{
+    height: 70px;
+    text-align: center;
+    color: aliceblue;
+  }
+  aside p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+      /* font weight es para hacerlo "strong", le podes ajustar q tan strong jejeje*/
+    }
+
+    .footerclass{ background-color: rgba(135, 137, 139, 0.499);
+      position: relative;
+       
+      
+    }
+    
+    .redes_sociales {
+        display: flex;
+        justify-content: flex-end;
+        left: 14px;
+    }
+    .footer_letras {
+      display: flex;
+      top: 70%;
+      flex-direction: row;
+  
+    }
+    .footer_letras p {
+      font-size: larger;
+      color: bisque;
+    }
+    .logofooter{ width: 17.5%;
+      top: 50px;
+      
+    } 
+
+  
+ 
