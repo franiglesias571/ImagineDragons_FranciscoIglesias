@@ -19,7 +19,7 @@ body {
 
 /** Logo de imagine Dragons**/
 .imgdr {
-  display: flex;
+  display: inline;
   justify-content: center;
   border-radius: 3%;
   overflow: hidden;
@@ -30,6 +30,45 @@ body {
     width: 100%;
 margin: 0 auto;
 }
+/* MENU HAMBURGUESA */
+.btn-burger{
+  display: flex;
+float: right;
+  width: 55px;
+  height: 55px;
+background: none;
+  border-radius: 5px;
+  transition: all 0.5m ease-in-out;
+}
+
+.btn-burger-icon{
+  display: block;
+  margin: auto;
+  width: 30px;
+  height: 4px;
+  background-color: beige;
+  border-radius: 2px;
+  transition: all 0.5m ease-in-out;
+}
+.btn-burger-icon::before, .btn-burger-icon::after{
+  content: '';
+  display: block;
+  margin: auto;
+  width: 30px;
+  height: 4px;
+  background-color: beige;
+  border-radius: 2px;
+  transition: all 0.5m ease-in-out;
+}
+.btn-burger-icon::before {
+  transform: translateY(-10px);
+}
+.btn-burger-icon:after{
+transform: translateY(6px)
+}
+
+/* TERMINA MENU HAMBURGUESA */
+
 
 .navheader {
   /* color: ; */
@@ -85,16 +124,10 @@ margin: 0 auto;
     margin: 20px 10px;
     padding-left: 20px;
   }
-.div_sectionprincipal { 
-    /* FLEX */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 /** "Escucha nuestro nuevo album! **/
   section h3 {
+    position: relative;
     font-size: 22px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: cornsilk;
@@ -107,14 +140,18 @@ margin: 0 auto;
   }
   /** VIDEO PUESTO**/
   iframe {
-    min-height: 35vw;
-    height: 22.5vh;
+    position: relative;
+    margin-top: 4%;
+    min-height: 27vw;
+    
+    
+    
   }
 /* ASIDE TEXTO PREVIO FOOTER */
 
   aside{
     height: 89px;
-    /* padding: 20px 10px 10px 10px; */
+   margin-bottom: 4%;
     text-align: center;
     color: aliceblue;
   }
@@ -138,7 +175,7 @@ margin: 0 auto;
     }
     .logofooter{
       grid-area: g1;
-      width: 15vw;
+      width: 50vw;
     }
     .redes_sociales{
       grid-area: g2;
@@ -181,11 +218,14 @@ margin: 0 auto;
     background-position: center;
     background-repeat: no-repeat;
   }
-
+  .btn-burger{
+    display: none !important;
+  }
   .giffrontal { 
     width: 75%;
   
   }
+  
   .textocostado {
   display: flex; 
   }
@@ -294,14 +334,11 @@ body {
     justify-content: center;
 }
 
-.giffrontal { 
-  width: 75%;
-
+.btn-burger{
+  display: none !important;
 }
-.textocostado {
-display: flex; 
-flex-direction: row;
-justify-content:space-around
+.giffrontal { 
+  width: 100%;
 }
 
 .navheader {
@@ -329,14 +366,13 @@ justify-content:space-around
 
   .maindiv {
     padding: 2px 15px;
-    margin-top: -4px;
+    margin-top: -5px;
     
   }
 
 .maindiv h2 {
-  padding: 25px;
   color: aliceblue;
-  font-size: 1em;
+  font-size: 1.1em;
 }
 .secdiv2 {
 right: 20%; 
@@ -366,7 +402,7 @@ right: 20%;
   }
 .a_album2 {
   width: 30vw;
-  justify-items: flex-end;
+  left: 3rem;
 
 }
 
